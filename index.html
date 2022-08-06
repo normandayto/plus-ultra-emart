@@ -8,17 +8,185 @@
     <!-- ---- Bootstrap CSS ---- -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
+    <!-- ---- Custom CSS ---- -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- ---- Font Awesome ---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Plus Ultra Shopping Center</title>
   </head>
   <body>
     <!-- ---- Navbar ---- -->
     <nav class="navbar">
       <div class="container">
-        <a href="index.html" class="navbar-brand"></a>
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center justify-content-between"
+        >
+          <img src="images/shopping-bag-icon.png" alt="Site Icon" />
+          <span id="brand-name">PLUS ULTRA</span>
+        </a>
+
+        <div class="nav-btns">
+          <button class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="badge position-absolute bg-primary top-0 translate-middle start-100"
+              >5</span
+            >
+          </button>
+          <button class="btn position-relative">
+            <i class="fa fa-heart"></i>
+            <span
+              class="badge position-absolute bg-primary top-0 translate-middle start-100"
+              >2</span
+            >
+          </button>
+          <button class="btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text center">
+            <li class="nav-item px-2 py-2">
+              <a href="#" class="nav-link text-dark">HOME</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">COLLECTION</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">SPECIALS</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">BLOGS</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">ABOUT US</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#collection" class="nav-link text-dark">POPULAR</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- ---- Bootstrap CSS ---- -->
+    <!-- ---- Hero ---- -->
+    <section
+      id="hero"
+      class="vh-100 carousel slide"
+      data-bs-ride="carousel"
+      style="padding-top: 104px"
+    >
+      <div class="container carousel-inner">
+        <div class="carousel-item text-center active">
+          <h2 class="text-white">Best Collection</h2>
+          <h1 class="text-white py-2 fw-bold">NEW ARRIVALS</h1>
+          <a href="login.html" class="btn">SHOP NOW</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Best Price & Offer</h2>
+          <h1 class="text-white py-2 fw-bold">NEW SEASON</h1>
+          <a href="login.html" class="btn">BUY NOW</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Best Time To Buy</h2>
+          <h1 class="text-white py-2 fw-bold">SUMMER SALE</h1>
+          <a href="login.html" class="btn">GET IT NOW</a>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-slide="prev"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-slide="next"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ---- Collection ---- -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+
+        <div class="row g-0">
+          <div
+            class="d-flex flex-wrap mt-5 justify-content-center filter-button-group"
+          >
+            <button class="btn m-2 active-filter-btn" data-filter="*">
+              All
+            </button>
+            <button class="btn m-2" data-filter=".best">Best Sellers</button>
+            <button class="btn m-2" data-filter=".featured">Featured</button>
+            <button class="btn m-2" data-filter=".new">New Arrivals</button>
+          </div>
+          <div class="collection-list row">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="collection-img position-relative">
+                <img
+                  src="images/c_formal_gray_shirt.png"
+                  alt="Item 1"
+                  class="w-100"
+                />
+                <span
+                  class="bg-primary position-absolute d-flex align-items-center justify-content-center text-white"
+                  >Sale</span
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+            <div class="col-md-6 col-lg-4 col-xl-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- ---- Bootstrap JS ---- -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- ---- Custom JS ---- -->
+    <script src="js/main.js"></script>
   </body>
 </html>
+
+2:37:14 - diri nag stop sa video july 30PM
