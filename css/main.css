@@ -120,7 +120,7 @@ body {
   font-family: var(--lg-font);
 }
 
-/* <!-- ---- News Letter ---- -->
+/* <!-- ---- News Letter ---- --> */
 #newsletter p{
   max-width: 600px;
 }
@@ -141,10 +141,8 @@ body {
   border-color: black;
 }
 
-/* <!-- ---- Footer ---- -->
+/* <!-- ---- Footer ---- --> */
 footer .brand{
   font-family: var(--lg-font);
   letter-spacing: 2px;
 }
-
-*/
