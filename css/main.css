@@ -93,12 +93,7 @@ body {
   border-radius: 50%;
 }
 
-
-/* 
-
-
-
-/* <!-- ---- Specials ---- -->
+/* <!-- ---- Specials ---- --> */
 .special-img span{
   top: 20px;
   right: 20px;
@@ -110,7 +105,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* <!-- ---- Banner ---- -->
+/* <!-- ---- Banner ---- --> */
 #banner{
   background: url(../images/offer_img.jpg) center/cover;
 }
